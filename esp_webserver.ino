@@ -95,7 +95,7 @@ void loop()
         // Do not print message on UART communication
         ReadMsg = false;
       }
-      // {"type":"GiveWIFIdata","ssid":"Tenda_1CFAC0","pass":"Netbm213"}
+      // {"type":"GiveWIFIdata","ssid":"pass","pass":"wifi id"}
       if(doc["type"] == "GiveWIFIdata")
       {
         if(WiFi.status() == WL_CONNECTED) // check to see if is already connected to some network before trying to connect to another one
